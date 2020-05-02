@@ -32,7 +32,7 @@ soup = BeautifulSoup(response.text, "html.parser")
 for data in soup.find_all("div", attrs={"class": "wod-wrap"}):
     html_text = data.text
 
-    # Get data to match excel columns
+    # Get date to match excel columns
     date = re.search(PATTERN, html_text).group(0)
     date = pd.to_datetime(date).strftime("%Y-%m-%d")
 
