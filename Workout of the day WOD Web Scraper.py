@@ -16,10 +16,10 @@ HEADERS = {
     'User-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36'}
 PATTERN = "\d+(\.|-)\d+(\.|-)\d{4}"
 
-#Create empty dataframe - run only once
+# Create empty dataframe - run only once
 # WOD_df = pd.DataFrame(index=["Open Prep", "Games Prep"],
 #                       columns=pd.date_range(start='2020-04-26', end='2022-04-26').strftime("%Y-%m-%d"))
-# WOD_df.to_excel("EXCEL_PATH")
+# WOD_df.to_excel(EXCEL_LOCATION)
 
 # Load excel to store workouts
 WOD_df = pd.read_excel(EXCEL_LOCATION, index_col=0)
